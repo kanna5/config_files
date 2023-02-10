@@ -1,0 +1,160 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+
+# Powerline symbols: https://github.com/ryanoasis/nerd-fonts/issues/144
+# Box drawing symbols: https://en.wikipedia.org/wiki/Box-drawing_character
+# Example of custom commands: https://github.com/starship/starship/discussions/1252
+
+add_newline = false
+palette = "gruvbox_dark"
+
+format = """
+$status\
+([|[\
+$character\
+$jobs\
+$env_var\
+](fg:bright-white bg:purple)|](fg:purple bg:purple))\
+$cmd_duration\
+$time\
+$username\
+$hostname\
+([ ](bg:bg2 fg:bright-blue)\
+$git_branch\
+$git_commit\
+$git_state\
+$git_status\
+)\
+$directory\
+\n\
+$shell \
+"""
+
+continuation_prompt = "[> ](fg:bright-black)"
+
+[palettes.gruvbox_dark]
+# Base16 colors
+black  = "#282828"
+red    = "#cc241d"
+green  = "#98971a"
+yellow = "#d79921"
+blue   = "#458588"
+purple = "#b16286"
+cyan   = "#689d6a"
+white  = "#a89984"
+
+bright-black  = "#928374"
+bright-red    = "#fb4934"
+bright-green  = "#b8bb26"
+bright-yellow = "#fabd2f"
+bright-blue   = "#83a598"
+bright-purple = "#d3869b"
+bright-cyan   = "#8ec07c"
+bright-white  = "#ebdbb2"
+
+# Extra colors defined by Gruvbox (https://github.com/gruvbox-community/gruvbox#dark-mode-1)
+bg0_h = "#1d2021"
+bg0_s = "#32302f"
+bg1   = "#3c3836"
+bg2   = "#504945"
+bg3   = "#665c54"
+bg4   = "#7c6f64"
+fg0   = "#fbf1c7"
+fg1   = "#ebdbb2"
+fg2   = "#d5c4a1"
+fg3   = "#bdae93"
+fg4   = "#a89984"
+
+orange        = "#d65d0e"
+bright-orange = "#fe8019"
+
+[status]
+disabled = false
+format = '[( $signal_name) $status ]($style)'
+style = 'fg:bright-white bold bg:red'
+# pipestatus = true # TODO
+
+[cmd_duration]
+min_time = 200
+show_milliseconds = true
+style = 'fg:black bg:bright-purple'
+format = '([ $duration]($style))'
+
+[character]
+format = "$symbol"
+success_symbol = ""
+error_symbol = "🥵"
+
+[jobs]
+format = "👀"
+
+[env_var.https_proxy]
+format = "🥺"
+
+[time]
+disabled = false
+style = 'fg:black bold bg:bright-purple'
+format = "[  $time ]($style)"
+time_format = "%R"
+
+[username]
+show_always = false
+style_root = 'bg:bright-blue fg:bright-yellow bold'
+style_user = 'bg:bright-blue fg:black bold'
+format = '[ $user ]($style)'
+
+[hostname]
+ssh_only = true
+style = "fg:black bg:bright-blue"
+format = "[ $hostname ]($style)"
+
+[git_branch]
+style = "bg:bg2 fg:fg1"
+format = '[ $branch(:$remote_branch) ]($style)'
+
+[git_commit]
+tag_disabled = false
+style = "bg:bg2 fg:fg1"
+tag_symbol = "  "
+format = '[ $hash$tag ]($style)'
+
+[git_status]
+conflicted = 'c'
+modified = 'm'
+renamed = 'r'
+deleted = 'd'
+untracked = 'u'
+staged = '⋄'
+stashed = '≡'
+style = "fg:fg4 bg:bg2"
+format = """([\\[\
+[$diverged$conflicted]($style fg:bright-red bold)\
+[$modified$renamed$deleted$untracked]($style fg:bright-orange)\
+[$staged$stashed]($style fg:bright-green)\
+\\] ]($style))"""
+
+[git_state]
+style = 'bg:bg2 fg:fg2'
+format = '[[$state( $progress_current/$progress_total)]($style fg:bright-yellow bold) ]($style)'
+
+[directory]
+style = "fg:fg2 bg:bg1"
+before_repo_root_style = "fg:fg3 bg:bg1"
+repo_root_style = "fg:fg2 bold bg:bg1"
+read_only_style = "fg:orange bold bg:bg1"
+read_only = ""
+format = "[ $path ]($style)([$read_only ]($read_only_style))"
+repo_root_format = '[ $before_root_path]($before_repo_root_style)[$repo_root]($repo_root_style)[$path ]($style)([$read_only ]($read_only_style))'
+truncate_to_repo = false
+truncation_symbol = "…/"
+fish_style_pwd_dir_length = 1
+
+[shell]
+disabled = false
+style = "fg:bright-black"
+format = "[$indicator [\\$]($style bold)]($style)"
+bash_indicator = 'bash'
+fish_indicator = 'fish'
+unknown_indicator = '?'
+
+[package]
+disabled = true

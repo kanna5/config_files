@@ -1,0 +1,56 @@
+; Note: This file is loaded before $HOME/.gitconfig
+
+[init]
+    defaultBranch = main
+
+[core]
+    pager = delta
+
+[alias]
+    graph = log --date=default-local --graph
+    sign = commit --amend --no-edit --gpg-sign
+    ffmerge = merge --ff-only
+
+[tag]
+    sort = version:refname
+
+[versionsort]
+    suffix = -
+
+[log]
+    decorate = short
+
+[diff]
+    algorithm = histogram
+
+[interactive]
+    diffFilter = delta --color-only
+
+[delta]
+    line-numbers = true
+    navigate = true
+    ; side-by-side = true
+
+    syntax-theme = "gruvbox-dark"
+    line-numbers-minus-style = 9
+    line-numbers-plus-style = 10
+    line-numbers-zero-style = 8
+    plus-style = syntax "#2a322b"
+    plus-emph-style = 0 10
+    minus-style = syntax "#362523"
+    minus-emph-style = 0 9
+    hunk-header-style = yellow ul
+    hunk-header-decoration-style = 0 ul
+    file-decoration-style = blue box
+
+    ; syntax-theme = "Solarized (dark)"
+    ; line-numbers-minus-style = red
+    ; line-numbers-plus-style = green
+    ; line-numbers-zero-style = 10
+    ; plus-style = syntax "#163d2d"
+    ; plus-emph-style = 8 green
+    ; minus-style = syntax "#252c35"
+    ; minus-emph-style = 8 red
+    ; hunk-header-style = yellow ul
+    ; hunk-header-decoration-style = 8 ul
+    ; file-decoration-style = blue box
