@@ -12,17 +12,20 @@ $status\
 ([|[\
 $character\
 $jobs\
-$env_var\
+${env_var.https_proxy}\
 ](fg:bright-white bg:purple)|](fg:purple bg:purple))\
 $cmd_duration\
 $time\
 $username\
 $hostname\
-([ ](bg:bg2 fg:bright-blue)\
+([ ](bg:bg2)\
+([](bg:bg2 fg:bright-blue)\
 $git_branch\
 $git_commit\
 $git_state\
 $git_status\
+)\
+(${env_var.VIRTUAL_ENV_PROMPT})\
 )\
 $directory\
 \n\
@@ -89,6 +92,10 @@ format = "👀"
 
 [env_var.https_proxy]
 format = "🥺"
+
+# Python venv
+[env_var.VIRTUAL_ENV_PROMPT]
+format = "[$env_value](bg:bg2 fg:bright-yellow)"
 
 [time]
 disabled = false
