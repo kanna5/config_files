@@ -100,7 +100,7 @@ format = "[$env_value](bg:bg2 fg:bright-yellow)"
 [time]
 disabled = false
 style = 'fg:black bold bg:bright-purple'
-format = "[  $time ]($style)"
+format = "[  $time ]($style)"
 time_format = "%R"
 
 [username]
@@ -112,7 +112,7 @@ format = '[ $user ]($style)'
 [hostname]
 ssh_only = true
 style = "fg:black bg:bright-blue"
-format = "[ $hostname ]($style)"
+format = "[󰌢 $hostname ]($style)"
 
 [git_branch]
 style = "bg:bg2 fg:fg1"
