@@ -1,0 +1,8 @@
+# This is global config file for `psf/black`.
+# See https://black.readthedocs.io/en/stable/usage_and_configuration/the_basics.html#configuration-via-a-file
+
+[tool.black]
+# -------------------------------------------------------------------------------------------------|
+line-length = 100
+
+# vim: ft=toml
