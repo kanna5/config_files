@@ -21,7 +21,7 @@
     decorate = short
 
 [diff]
-    algorithm = histogram
+    algorithm = minimal
 
 [interactive]
     diffFilter = delta --color-only
@@ -35,9 +35,9 @@
     line-numbers-minus-style = 9
     line-numbers-plus-style = 10
     line-numbers-zero-style = 8
-    plus-style = syntax "#2a322b"
+    plus-style = syntax "#253128"
     plus-emph-style = 0 10
-    minus-style = syntax "#362523"
+    minus-style = syntax "#3a2021"
     minus-emph-style = 0 9
     hunk-header-style = yellow ul
     hunk-header-decoration-style = 0 ul
