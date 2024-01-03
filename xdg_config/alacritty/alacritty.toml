@@ -1,0 +1,39 @@
+import = [
+    "~/.config/alacritty/colors-gruvbox-dark.toml",
+    "~/.config/alacritty/keybindings.toml"
+]
+live_config_reload = true
+
+[debug]
+log_level = "Warn"
+
+[env]
+TERM = "xterm-256color"
+
+[font]
+builtin_box_drawing = true
+size = 10
+
+[[hints.enabled]]
+command = "xdg-open"
+hyperlinks = true
+post_processing = true
+regex = "(ipfs:|ipns:|magnet:|mailto:|gemini:|gopher:|https:|http:|news:|file:|git:|ssh:|ftp:)[^\u0000-\u001F\u007F-<>\"\\s{-}\\^⟨⟩`]+"
+
+[hints.enabled.binding]
+key = "U"
+mods = "Control|Shift"
+
+[hints.enabled.mouse]
+enabled = true
+mods = "Control"
+
+[scrolling]
+history = 100000
+multiplier = 5
+
+[selection]
+semantic_escape_chars = ",│`|:\"' ()[]{}<>\t "
+
+[window]
+dynamic_title = true

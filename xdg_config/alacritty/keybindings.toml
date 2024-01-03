@@ -1,0 +1,45 @@
+[[keyboard.bindings]]
+action = "CreateNewWindow"
+key = "N"
+mods = "Control|Shift"
+
+[[keyboard.bindings]]
+action = "ClearSelection"
+key = "LBracket"
+mode = "Vi|~Search"
+mods = "Control"
+
+[[keyboard.bindings]]
+action = "Last"
+key = 5
+mode = "Vi|~Search"
+mods = "Shift"
+
+[[keyboard.bindings]]
+action = "FirstOccupied"
+key = 7
+mode = "Vi|~Search"
+mods = "Shift"
+
+[[keyboard.bindings]]
+action = "Bracket"
+key = 6
+mode = "Vi|~Search"
+mods = "Shift"
+
+[[keyboard.bindings]]
+action = "SearchForward"
+key = "Slash"
+mode = "Vi|~Search"
+
+[[keyboard.bindings]]
+action = "SearchBackward"
+key = 53
+mode = "Vi|~Search"
+mods = "Shift"
+
+[[keyboard.bindings]]
+action = "SearchCancel"
+key = "LBracket"
+mode = "Search"
+mods = "Control"
