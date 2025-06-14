@@ -1,0 +1,15 @@
+/**
+ *
+ * Author : LLM:claude-3.7-sonnet
+ * 
+ * Colors
+ **/
+
+* {
+    background:     #282828FF;  /* dark0 - main background */
+    background-alt: #3C3836FF;  /* dark1 - alternative background */
+    foreground:     #EBDBB2FF;  /* light1 - main foreground/text */
+    selected:       #458588FF;  /* neutral_blue - selected items */
+    active:         #83A598FF;  /* bright_blue - active items */
+    urgent:         #CC241DFF;  /* neutral_red - urgent items */
+}
