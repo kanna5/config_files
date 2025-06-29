@@ -6,3 +6,4 @@ $include /etc/inputrc
 
 set show-all-if-unmodified On
 set colored-completion-prefix On
+set completion-ignore-case On
