@@ -1,18 +1,13 @@
-import = [
-    "~/.config/alacritty/colors-gruvbox-dark.toml",
-    "~/.config/alacritty/keybindings.toml"
-]
-live_config_reload = true
-
 [debug]
 log_level = "Warn"
+prefer_egl = true
 
 [env]
 TERM = "xterm-256color"
 
 [font]
 builtin_box_drawing = true
-size = 10
+size = 12.4
 
 [[hints.enabled]]
 command = "xdg-open"
@@ -37,3 +32,7 @@ semantic_escape_chars = ",│`|:\"' ()[]{}<>\t "
 
 [window]
 dynamic_title = true
+
+[general]
+live_config_reload = true
+import = ["colors/gruvbox-dark-hard.toml", "keybindings.toml"]
