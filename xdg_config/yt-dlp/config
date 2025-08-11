@@ -1,2 +1,3 @@
--f bestvideo[vcodec^=av01]+bestaudio[acodec=opus]/bestvideo[vcodec^=av01]+bestaudio/bestvideo[ext=webm]+bestaudio[ext=webm]/bestvideo+bestaudio/best
+-f 'bv[vcodec^=av01]+ba[acodec=opus]/bv[vcodec^=av01]+ba/bv[ext=webm]+ba[acodec=opus]/bv[ext=webm]+ba/bv+ba/best'
+--embed-metadata
 --no-call-home
