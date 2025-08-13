@@ -23,6 +23,9 @@
 [diff]
     algorithm = patience
 
+[merge]
+    conflictStyle = zdiff3
+
 [interactive]
     diffFilter = delta --color-only
 
@@ -32,6 +35,7 @@
     ; side-by-side = true
 
     syntax-theme = "gruvbox-dark"
+    dark = true
     line-numbers-minus-style = 9
     line-numbers-plus-style = 10
     line-numbers-zero-style = 8
