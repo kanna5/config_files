@@ -1,16 +1,16 @@
 # coding=utf-8
 
-# Some frequently used built-in libraries
-import os
 import sys
-import json
 
-# Get rich... (for better cli experience)
+# Get rich...
 try:
-    from rich import pretty as pretty
+    from rich import pretty
 
     pretty.install()
     del pretty
+    sys.stderr.write("Loaded: rich.pretty\n")
 
+except ImportError:
+    pass
 except Exception as e:
     sys.stderr.write("failed to load rich.pretty: %s\n" % e)
