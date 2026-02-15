@@ -9,10 +9,14 @@
 [alias]
     graph = log --date=default-local --graph
     sign = commit --amend --no-edit --gpg-sign
-    ffmerge = merge --ff-only
+    ff = merge --ff-only
+    root = rev-parse --show-toplevel
 
 [tag]
     sort = version:refname
+
+[gpg]
+    format = ssh
 
 [versionsort]
     suffix = -
@@ -21,10 +25,32 @@
     decorate = short
 
 [diff]
-    algorithm = patience
+    algorithm = histogram
+    colorMoved = true
+    mnemonicPrefix = true
+    renames = true
+
+[branch]
+    sort = -committerdate
+
+[commit]
+    verbose = true
+
+[fetch]
+    all = true
+
+[push]
+    autoSetupRemote = true
+
+[column]
+    ui = auto
 
 [merge]
     conflictStyle = zdiff3
+
+[rebase]
+    autosquash = true
+    autostash = true
 
 [interactive]
     diffFilter = delta --color-only
