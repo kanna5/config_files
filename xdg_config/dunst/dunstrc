@@ -241,7 +241,7 @@
     max_icon_size = 64
 
     # Paths to default icons (only necessary when not using recursive icon lookup)
-    icon_path = /usr/share/icons/Papirus-Dark/48x48/apps:/usr/share/icons/Papirus-Dark/48x48/devices:/usr/share/icons/Papirus-Dark/48x48/mimetypes:/usr/share/icons/Papirus-Dark/48x48/places:/usr/share/icons/Papirus-Dark/48x48/status:/usr/share/icons/Papirus-Dark/24x24/actions:/usr/share/icons/Papirus-Dark/symbolic/status
+    icon_path = /usr/share/icons/Papirus-Dark/24x24/actions:/usr/share/icons/Papirus-Dark/32x32/status:/usr/share/icons/Papirus-Dark/32x32/symbolic/status:/usr/share/icons/Papirus-Dark/48x48/apps:/usr/share/icons/Papirus-Dark/48x48/devices:/usr/share/icons/Papirus-Dark/48x48/mimetypes:/usr/share/icons/Papirus-Dark/48x48/places:/usr/share/icons/Papirus-Dark/48x48/status
 
     ### History ###
 
@@ -255,7 +255,7 @@
     ### Misc/Advanced ###
 
     # dmenu path.
-    dmenu = /usr/bin/dmenu -p dunst:
+    dmenu = /usr/bin/rofi -dmenu -p Action
 
     # Browser for opening urls in context menu.
     browser = /usr/bin/xdg-open
@@ -327,8 +327,8 @@
     # These values can be strung together for each mouse event, and
     # will be executed in sequence.
     mouse_left_click = close_current
-    mouse_middle_click = do_action, close_current
-    mouse_right_click = close_all
+    mouse_middle_click = do_action
+    mouse_right_click = context
 
 # Experimental features that may or may not work correctly. Do not expect them
 # to have a consistent behaviour across releases.

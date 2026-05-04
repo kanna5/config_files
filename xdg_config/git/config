@@ -42,9 +42,6 @@
 [push]
     autoSetupRemote = true
 
-[column]
-    ui = auto
-
 [merge]
     conflictStyle = zdiff3
 
