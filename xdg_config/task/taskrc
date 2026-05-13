@@ -1,0 +1,28 @@
+# [Created by task 3.4.2 4/24/2026 17:03:58]
+news.version=3.4.2
+
+data.location=~/.local/share/task
+hooks.location=~/.config/task/hooks
+
+# Color theme
+include dark-256.theme
+color.active=color15 on rgb301
+color.alternate=
+color.blocked=color8
+color.blocking=on gray4
+color.due.today=bold color1
+color.overdue=bold color9 on rgb100
+
+# Tags
+urgency.user.tag.automated.coefficient=-1
+urgency.user.tag.backlog.coefficient=-2
+
+# Reports
+report.next.filter=status:pending -WAITING -automated limit:page
+
+# Contexts
+context.work.read=+work
+context.work.write=+work
+
+# Synchronization
+include sync.conf
