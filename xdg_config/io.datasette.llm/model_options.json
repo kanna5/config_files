@@ -1,0 +1,8 @@
+{
+  "gpt-5.5": {
+    "reasoning_effort": "medium"
+  },
+  "anthropic/claude-opus-4-6": {
+    "thinking_effort": "medium"
+  }
+}
