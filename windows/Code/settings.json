@@ -1,0 +1,112 @@
+{
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "files.autoSave": "onFocusChange",
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "files.autoSave": "onFocusChange",
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.fontFamily": "\"IBM Plex Mono\", Consolas, 'Courier New', monospace",
+  "terminal.integrated.commandsToSkipShell": ["-workbench.action.quickOpen"],
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "terminal.integrated.fontFamily": "\"BlexMono Nerd Font Mono\", monospace",
+  "terminal.integrated.profiles.windows": {
+    "Command Prompt": {
+      "args": [],
+      "icon": "terminal-cmd",
+      "path": [
+        "${env:windir}\\Sysnative\\cmd.exe",
+        "${env:windir}\\System32\\cmd.exe"
+      ]
+    },
+    "Git Bash": {
+      "args": ["--login", "-i"],
+      "path": "C:\\Users\\Username\\AppData\\Local\\Programs\\Git\\bin\\bash.exe"
+    },
+    "PowerShell": {
+      "icon": "terminal-powershell",
+      "source": "PowerShell"
+    }
+  },
+  "terminal.integrated.stickyScroll.enabled": false,
+  "vim.enableNeovim": true,
+  "vim.highlightedyank.duration": 100,
+  "vim.highlightedyank.enable": true,
+  "vim.leader": "<space>",
+  "vim.neovimPath": "C:\\Program Files\\Neovim\\bin\\nvim.exe",
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["K"],
+      "commands": ["editor.action.showHover"]
+    },
+    {
+      "before": ["<leader>", "F"],
+      "commands": ["editor.action.formatDocument"]
+    },
+    {
+      "before": ["<leader>", "f", "g"],
+      "commands": ["workbench.action.findInFiles"]
+    },
+    {
+      "before": ["<leader>", "f", "f"],
+      "commands": ["workbench.action.quickOpen"]
+    },
+    {
+      "before": ["<leader>", "<C-f>"],
+      "commands": ["workbench.view.explorer"]
+    },
+    {
+      "before": ["<leader>", "y", "y"],
+      "after": ["\"", "+", "y", "y"]
+    },
+    {
+      "before": ["<leader>", "g", "r"],
+      "commands": ["editor.action.goToReferences"]
+    },
+    {
+      "before": ["<leader>", "g", "t"],
+      "commands": ["editor.action.goToTypeDefinition"]
+    },
+    {
+      "before": ["]", "c"],
+      "commands": ["workbench.action.editor.nextChange"]
+    },
+    {
+      "before": ["[", "c"],
+      "commands": ["workbench.action.editor.previousChange"]
+    },
+    {
+      "before": ["<leader>", "t", "O"],
+      "commands": ["workbench.action.closeOtherEditors"]
+    },
+    {
+      "before": ["[", "i"],
+      "after": ["v", "a", "f", "o", "<Esc>"]
+    },
+    {
+      "before": ["]", "i"],
+      "after": ["v", "a", "f", "<Esc>"]
+    },
+    {
+      "before": ["<leader>", "A"],
+      "commands": ["editor.action.codeAction"]
+    }
+  ],
+  "vim.smartRelativeLine": true,
+  "vim.visualModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<leader>", "y"],
+      "after": ["\"", "+", "y"]
+    }
+  ],
+  "workbench.colorTheme": "Gruvbox Dark Hard",
+  "chat.utilityModel": "openai/gpt-5.5",
+  "chat.utilitySmallModel": "openai/gpt-5.4-mini"
+}

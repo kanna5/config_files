@@ -1,0 +1,14 @@
+[wsl2]
+# Use zram
+swap = 0
+# Use custom kernel build
+kernel = C:\\Users\\Username\\bzImage
+
+[general]
+# Prevents instances from shutting down when no terminal window is open
+instanceIdleTimeout = -1
+
+[experimental]
+autoMemoryReclaim = gradual
+
+# vim: ft=ini
