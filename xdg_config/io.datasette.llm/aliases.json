@@ -1,4 +1,8 @@
 {
   "opus": "anthropic/claude-opus-4-6",
-  "gpt": "gpt-5.5"
+  "sonnet": "anthropic/claude-sonnet-4-6",
+  "gpt": "gpt-5.6-sol",
+  "sol": "gpt-5.6-sol",
+  "terra": "gpt-5.6-terra",
+  "luna": "gpt-5.6-luna"
 }

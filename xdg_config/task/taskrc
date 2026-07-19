@@ -12,10 +12,13 @@ color.blocked=color8
 color.blocking=on gray4
 color.due.today=bold color1
 color.overdue=bold color9 on rgb100
+color.tag.w=color245 on gray1
+color.tag.backlog=gray8
 
 # Tags
-urgency.user.tag.automated.coefficient=-1
-urgency.user.tag.backlog.coefficient=-2
+urgency.user.tag.automated.coefficient=-2
+urgency.user.tag.w.coefficient=-2           # blocked waiting for an update
+urgency.user.tag.backlog.coefficient=-4
 
 # Reports
 report.next.filter=status:pending -WAITING -automated limit:page
@@ -23,6 +26,9 @@ report.next.filter=status:pending -WAITING -automated limit:page
 # Contexts
 context.work.read=+work
 context.work.write=+work
+
+# Misc
+search.case.sensitive=no
 
 # Synchronization
 include sync.conf
