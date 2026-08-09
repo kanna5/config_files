@@ -4,5 +4,8 @@
   "gpt": "gpt-5.6-sol",
   "sol": "gpt-5.6-sol",
   "terra": "gpt-5.6-terra",
-  "luna": "gpt-5.6-luna"
+  "luna": "gpt-5.6-luna",
+  "k3": "kimi-k3",
+  "ds": "deepseek-v4-flash-0731",
+  "glm": "glm-5p2"
 }

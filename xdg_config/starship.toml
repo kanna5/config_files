@@ -100,7 +100,7 @@ format = "[$env_value ](bg:bg2 fg:bright-yellow)"
 [time]
 disabled = false
 style = 'fg:black bold bg:bright-purple'
-format = "[  $time ]($style)"
+format = "[ 󰖉 $time ]($style)"
 time_format = "%R"
 
 [username]

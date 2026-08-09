@@ -1,0 +1,2 @@
+globalBinDir: "${HOME}/.local/bin"
+minimumReleaseAge: 10080
