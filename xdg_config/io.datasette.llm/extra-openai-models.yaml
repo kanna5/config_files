@@ -1,28 +1,36 @@
 ---
-- model_id: gpt-5.6-sol
-  model_name: gpt-5.6-sol
-  responses: true
-  reasoning: true
-  supports_schema: true
-  supports_tools: true
-  vision: true
-
-- model_id: gpt-5.6-terra
-  model_name: gpt-5.6-terra
-  responses: true
-  reasoning: true
-  supports_schema: true
-  supports_tools: true
-  vision: true
-
-- model_id: gpt-5.6-luna
+# Codex subscription proxy
+- model_id: gpt-5.6-sol-codex
   model_name: gpt-5.6-luna
+  api_base: https://codex.moemoe9.net/d677p22vmrvgyjjpwaxg555mja/v1
+  api_key_name: codex-proxy
   responses: true
   reasoning: true
   supports_schema: true
   supports_tools: true
   vision: true
 
+- model_id: gpt-5.6-terra-codex
+  model_name: gpt-5.6-luna
+  api_base: https://codex.moemoe9.net/d677p22vmrvgyjjpwaxg555mja/v1
+  api_key_name: codex-proxy
+  responses: true
+  reasoning: true
+  supports_schema: true
+  supports_tools: true
+  vision: true
+
+- model_id: gpt-5.6-luna-codex
+  model_name: gpt-5.6-luna
+  api_base: https://codex.moemoe9.net/d677p22vmrvgyjjpwaxg555mja/v1
+  api_key_name: codex-proxy
+  responses: true
+  reasoning: true
+  supports_schema: true
+  supports_tools: true
+  vision: true
+
+# Fireworks.ai
 - model_id: deepseek-v4-flash-0731
   model_name: accounts/fireworks/models/deepseek-v4-flash-0731
   api_base: https://api.fireworks.ai/inference/v1

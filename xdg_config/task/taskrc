@@ -14,6 +14,9 @@ color.due.today=bold color1
 color.overdue=bold color9 on rgb100
 color.tag.w=color245 on gray1
 color.tag.backlog=gray8
+color.uda.priority.H=rgb543
+color.uda.priority.M=rgb553
+color.uda.priority.L=none
 
 # Tags
 urgency.user.tag.automated.coefficient=-2
@@ -29,6 +32,9 @@ context.work.write=+work
 
 # Misc
 search.case.sensitive=no
+
+# Taskwarrior-TUI
+uda.taskwarrior-tui.shortcuts.1=~/.config/task/tui-scripts/toggle-tag.backlog
 
 # Synchronization
 include sync.conf
