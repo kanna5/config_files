@@ -3,11 +3,13 @@
   "opus": "anthropic/claude-opus-5",
   "sonnet": "anthropic/claude-sonnet-5",
   "haiku": "anthropic/claude-haiku-4-5-20251001",
+  "astra": "gpt-6-astra-codex",
   "gpt": "gpt-5.6-sol-codex",
   "sol": "gpt-5.6-sol-codex",
   "terra": "gpt-5.6-terra-codex",
   "luna": "gpt-5.6-luna-codex",
+  "gemini": "gemini/gemini-3.7-flash",
   "k3": "kimi-k3",
-  "ds": "deepseek-v4-flash-0731",
-  "glm": "glm-5p2"
+  "glm": "glm-5p3",
+  "glm-flash": "glm-5p3-flash"
 }

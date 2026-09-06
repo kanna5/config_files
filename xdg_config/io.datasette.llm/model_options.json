@@ -11,23 +11,30 @@
   "anthropic/claude-haiku-4-5-20251001": {
     "thinking_effort": "high"
   },
+  "gpt-6-astra-codex": {
+    "reasoning_effort": "medium",
+    "service_tier": "priority"
+  },
   "gpt-5.6-sol-codex": {
-    "reasoning_effort": "medium"
+    "reasoning_effort": "high",
+    "service_tier": "priority"
   },
   "gpt-5.6-terra-codex": {
-    "reasoning_effort": "medium"
+    "reasoning_effort": "xhigh",
+    "service_tier": "priority"
   },
   "gpt-5.6-luna-codex": {
-    "reasoning_effort": "high"
+    "reasoning_effort": "max",
+    "service_tier": "priority"
   },
   "kimi-k3": {
     "reasoning_effort": "medium"
   },
-  "deepseek-v4-flash-0731": {
-    "reasoning_effort": "high"
-  },
-  "glm-5p2": {
+  "glm-5p3": {
     "reasoning_effort": "medium"
+  },
+  "glm-5p3-flash": {
+    "reasoning_effort": "max"
   },
   "inkling": {
     "reasoning_effort": "medium"
