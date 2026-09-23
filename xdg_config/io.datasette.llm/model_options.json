@@ -15,15 +15,11 @@
     "reasoning_effort": "medium",
     "service_tier": "priority"
   },
-  "gpt-5.6-sol-codex": {
+  "gpt-6-sol-codex": {
     "reasoning_effort": "high",
     "service_tier": "priority"
   },
-  "gpt-5.6-terra-codex": {
-    "reasoning_effort": "xhigh",
-    "service_tier": "priority"
-  },
-  "gpt-5.6-luna-codex": {
+  "gpt-6-luna-codex": {
     "reasoning_effort": "max",
     "service_tier": "priority"
   },
@@ -34,6 +30,9 @@
     "reasoning_effort": "medium"
   },
   "glm-5p3-flash": {
+    "reasoning_effort": "max"
+  },
+  "deepseek-v4p1-flash": {
     "reasoning_effort": "max"
   },
   "inkling": {
