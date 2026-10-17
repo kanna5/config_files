@@ -43,7 +43,11 @@
         "face": "BlexMono Nerd Font Mono",
         "size": 11
       },
-      "intenseTextStyle": "bold"
+      "intenseTextStyle": "bold",
+      "antialiasingMode": "cleartype",
+      "environment": {
+        "COLORTERM": "truecolor"
+      }
     },
     "list": []
   },

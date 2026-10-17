@@ -1,0 +1,11 @@
+[wsl2]
+swap = 0
+; kernel = C:\\bzImage.linux-msft-wsl-6.18.40.1
+
+[general]
+instanceIdleTimeout = -1
+
+[experimental]
+autoMemoryReclaim = gradual
+
+# vim: ft=ini
