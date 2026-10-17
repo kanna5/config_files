@@ -1,15 +1,16 @@
 {
-  "fable": "anthropic/claude-fable-5",
-  "opus": "anthropic/claude-opus-5",
-  "sonnet": "anthropic/claude-sonnet-5",
-  "haiku": "anthropic/claude-haiku-4-5-20251001",
+  "fable": "anthropic/claude-fable-5-1",
+  "opus": "anthropic/claude-opus-5-5",
+  "sonnet": "anthropic/claude-sonnet-5-5",
+  "haiku": "anthropic/claude-haiku-5-5",
   "astra": "gpt-6-astra-codex",
-  "gpt": "gpt-6-sol-codex",
-  "sol": "gpt-6-sol-codex",
+  "gpt": "gpt-6-astra-codex",
+  "sol": "gpt-6.1-sol-codex",
   "luna": "gpt-6-luna-codex",
-  "gemini": "gemini/gemini-3.7-flash",
+  "gemini": "gemini/gemini-3.8-flash",
+  "muse": "muse-spark-open",
   "k3": "kimi-k3",
   "glm": "glm-5p3",
   "glm-flash": "glm-5p3-flash",
-  "ds-flash": "deepseek-v4p1-flash"
+  "ds": "deepseek-v4p1-flash"
 }

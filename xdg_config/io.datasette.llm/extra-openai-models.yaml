@@ -11,8 +11,8 @@
   supports_tools: true
   vision: true
 
-- model_id: gpt-6-sol-codex
-  model_name: gpt-6-sol
+- model_id: gpt-6.1-sol-codex
+  model_name: gpt-6.1-sol
   api_base: https://codex.moemoe9.net/d677p22vmrvgyjjpwaxg555mja/v1
   api_key_name: codex-proxy
   service_tier: true
@@ -34,8 +34,28 @@
   vision: true
 
 # Fireworks.ai
+- model_id: muse-spark-open
+  model_name: accounts/fireworks/models/muse-spark-open
+  api_base: https://api.fireworks.ai/inference/v1
+  api_key_name: fireworks
+  responses: true
+  reasoning: true
+  supports_schema: true
+  supports_tools: true
+  vision: true
+
 - model_id: glm-5p3
   model_name: accounts/fireworks/models/glm-5p3
+  api_base: https://api.fireworks.ai/inference/v1
+  api_key_name: fireworks
+  responses: true
+  reasoning: true
+  supports_schema: true
+  supports_tools: true
+  vision: false
+
+- model_id: glm-5p3-flash
+  model_name: accounts/fireworks/models/glm-5p3-flash
   api_base: https://api.fireworks.ai/inference/v1
   api_key_name: fireworks
   responses: true
@@ -53,16 +73,6 @@
   supports_schema: true
   supports_tools: true
   vision: true
-
-- model_id: glm-5p3-flash
-  model_name: accounts/fireworks/models/glm-5p3-flash
-  api_base: https://api.fireworks.ai/inference/v1
-  api_key_name: fireworks
-  responses: true
-  reasoning: true
-  supports_schema: true
-  supports_tools: true
-  vision: false
 
 - model_id: kimi-k3
   model_name: accounts/fireworks/models/kimi-k3

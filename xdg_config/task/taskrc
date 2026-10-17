@@ -1,5 +1,5 @@
 # [Created by task 3.4.2 4/24/2026 17:03:58]
-news.version=3.4.2
+news.version=3.5.0
 
 data.location=~/.local/share/task
 hooks.location=~/.config/task/hooks

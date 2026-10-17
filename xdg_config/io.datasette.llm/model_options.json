@@ -1,27 +1,33 @@
 {
-  "anthropic/claude-fable-5": {
+  "anthropic/claude-fable-5-1": {
     "thinking_effort": "low"
   },
-  "anthropic/claude-opus-5": {
+  "anthropic/claude-opus-5-5": {
     "thinking_effort": "medium"
   },
-  "anthropic/claude-sonnet-5": {
+  "anthropic/claude-sonnet-5-5": {
     "thinking_effort": "medium"
   },
-  "anthropic/claude-haiku-4-5-20251001": {
+  "anthropic/claude-haiku-5-5": {
     "thinking_effort": "high"
   },
   "gpt-6-astra-codex": {
     "reasoning_effort": "medium",
     "service_tier": "priority"
   },
-  "gpt-6-sol-codex": {
+  "gpt-6.1-sol-codex": {
     "reasoning_effort": "high",
     "service_tier": "priority"
   },
   "gpt-6-luna-codex": {
     "reasoning_effort": "max",
     "service_tier": "priority"
+  },
+  "gemini/gemini-3.8-flash": {
+    "thinking_level": "medium"
+  },
+  "muse-spark-open": {
+    "reasoning_effort": "medium"
   },
   "kimi-k3": {
     "reasoning_effort": "medium"
