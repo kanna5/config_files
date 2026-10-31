@@ -6,11 +6,12 @@
   "astra": "gpt-6-astra-codex",
   "gpt": "gpt-6-astra-codex",
   "sol": "gpt-6.1-sol-codex",
+  "terra": "gpt-6.1-terra-codex",
   "luna": "gpt-6-luna-codex",
   "gemini": "gemini/gemini-3.8-flash",
   "muse": "muse-spark-open",
   "k3": "kimi-k3",
   "glm": "glm-5p3",
   "glm-flash": "glm-5p3-flash",
-  "ds": "deepseek-v4p1-flash"
+  "ds": "deepseek-v4p1-flash-1017"
 }

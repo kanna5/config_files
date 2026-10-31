@@ -4,30 +4,47 @@
 # Box drawing symbols: https://en.wikipedia.org/wiki/Box-drawing_character
 # Example of custom commands: https://github.com/starship/starship/discussions/1252
 
-add_newline = false
-palette = "gruvbox_dark"
+scan_timeout = 100
+add_newline  = false
+palette      = "gruvbox_dark"
 
+# Hidden characters help fix positioning / background color issues in some
+# terminal emulators
 format = """
 $status\
-([|[\
-$character\
+(\
+[\\[](fg:purple bg:purple)\
+[$character\
 $jobs\
 ${env_var.https_proxy}\
-](fg:bright-white bg:purple)|](fg:purple bg:purple))\
+](fg:bright-white bg:purple)\
+[\\]](fg:purple bg:purple)\
+)\
+(\
+[\\[](fg:bright-purple bg:bright-purple)\
 $cmd_duration\
 $time\
+[\\]](fg:bright-purple bg:bright-purple)\
+)\
+(\
+[\\[](fg:bright-blue bg:bright-blue)\
 $username\
 $hostname\
-([ ](bg:bg2)\
+[\\]](fg:bright-blue bg:bright-blue)\
+)\
+(\
+[ ](bg:bg2)\
+${custom.tasks}\
 ([](bg:bg2 fg:bright-blue)\
 $git_branch\
 $git_commit\
 $git_state\
-$git_status\
-)\
+$git_status)\
 (${env_var.VIRTUAL_ENV_PROMPT})\
 )\
+[\\[](fg:bg1 bg:bg1)\
 $directory\
+[\\]](fg:bg1 bg:bg1)\
 \n\
 $shell \
 """
@@ -72,20 +89,20 @@ bright-orange = "#fe8019"
 
 [status]
 disabled = false
-format = '[( $signal_name) $status ]($style)'
-style = 'fg:bright-white bold bg:red'
+style    = 'fg:bright-white bold bg:red'
+format   = '[ ($signal_name )$status ]($style)'
 # pipestatus = true # TODO
 
 [cmd_duration]
-min_time = 200
+min_time          = 200
 show_milliseconds = true
-style = 'fg:black bg:bright-purple'
-format = '([ $duration]($style))'
+style             = 'fg:black bg:bright-purple'
+format            = '([$duration ]($style))'
 
 [character]
-format = "$symbol"
+format         = "$symbol"
 success_symbol = ""
-error_symbol = "🥵"
+error_symbol   = "🥵"
 
 [jobs]
 format = "👀"
@@ -98,41 +115,42 @@ format = "🥺"
 format = "[$env_value ](bg:bg2 fg:bright-yellow)"
 
 [time]
-disabled = false
-style = 'fg:black bold bg:bright-purple'
-format = "[ 󰖉 $time ]($style)"
+disabled    = false
+style       = 'fg:black bold bg:bright-purple'
+format      = "[󰖉 $time]($style)"
 time_format = "%R"
 
 [username]
 show_always = false
-style_root = 'bg:bright-blue fg:bright-yellow bold'
-style_user = 'bg:bright-blue fg:black bold'
-format = '[ $user ]($style)'
+style_root  = 'bg:bright-blue fg:bright-yellow bold'
+style_user  = 'bg:bright-blue fg:black bold'
+format      = '[$user]($style)'
 
 [hostname]
 ssh_only = true
-style = "fg:black bg:bright-blue"
-format = "[󰢩 $hostname ]($style)"
+style    = "fg:black bg:bright-blue"
+format   = "[@$hostname]($style)"
 
 [git_branch]
-style = "bg:bg2 fg:fg1"
+style  = "bg:bg2 fg:fg1"
 format = '[ $branch(:$remote_branch) ]($style)'
 
 [git_commit]
 tag_disabled = false
-style = "bg:bg2 fg:fg1"
-tag_symbol = "  "
-format = '[ $hash$tag ]($style)'
+style        = "bg:bg2 fg:fg1"
+tag_symbol   = "  "
+format       = '[$hash$tag ]($style)'
 
 [git_status]
 conflicted = 'c'
-modified = 'm'
-renamed = 'r'
-deleted = 'd'
-untracked = 'u'
-staged = '⋄'
-stashed = '≡'
-style = "fg:fg4 bg:bg2"
+modified   = 'm'
+renamed    = 'r'
+deleted    = 'd'
+untracked  = 'u'
+staged     = '⋄'
+stashed    = '≡'
+style      = "fg:fg4 bg:bg2"
+
 format = """([\\[\
 [$diverged$conflicted]($style fg:bright-red bold)\
 [$modified$renamed$deleted$untracked]($style fg:bright-orange)\
@@ -140,28 +158,48 @@ format = """([\\[\
 \\] ]($style))"""
 
 [git_state]
-style = 'bg:bg2 fg:fg2'
+style  = 'bg:bg2 fg:fg2'
 format = '[[$state( $progress_current/$progress_total)]($style fg:bright-yellow bold) ]($style)'
 
 [directory]
-style = "fg:fg2 bg:bg1"
-before_repo_root_style = "fg:fg3 bg:bg1"
-repo_root_style = "fg:fg2 bold bg:bg1"
-read_only_style = "fg:orange bold bg:bg1"
-read_only = ""
-format = "[ $path ]($style)([$read_only ]($read_only_style))"
-repo_root_format = '[ $before_root_path]($before_repo_root_style)[$repo_root]($repo_root_style)[$path ]($style)([$read_only ]($read_only_style))'
-truncate_to_repo = false
-truncation_symbol = "…/"
+style                     = "fg:fg2 bg:bg1"
+before_repo_root_style    = "fg:fg3 bg:bg1"
+repo_root_style           = "fg:fg2 bold bg:bg1"
+read_only_style           = "fg:orange bold bg:bg1"
+read_only                 = ""
+format                    = "[$path]($style)([ $read_only]($read_only_style))"
+repo_root_format          = '[$before_root_path]($before_repo_root_style)[$repo_root]($repo_root_style)[$path]($style)([ $read_only]($read_only_style))'
+truncate_to_repo          = false
+truncation_symbol         = "…/"
 fish_style_pwd_dir_length = 1
 
 [shell]
-disabled = false
-style = "fg:bright-black"
-format = "[$indicator [\\$]($style bold)]($style)"
-bash_indicator = 'bash'
-fish_indicator = 'fish'
+disabled          = false
+style             = "fg:bright-black"
+format            = "[$indicator [\\$]($style bold)]($style)"
+bash_indicator    = 'bash'
+fish_indicator    = 'fish'
 unknown_indicator = '?'
 
 [package]
 disabled = true
+
+# Detects makefile and justfile
+[custom.tasks]
+detect_files = ["Makefile", "makefile", "GNUmakefile"]
+symbol = "󰯂"
+style = "bold fg:bright-green bg:bg2"
+format = "[$symbol ]($style)"
+shell = ["sh"]
+when = '''
+dir="$PWD"
+while :; do
+    for file in "$dir"/[Jj][Uu][Ss][Tt][Ff][Ii][Ll][Ee] \
+                "$dir"/.[Jj][Uu][Ss][Tt][Ff][Ii][Ll][Ee]; do
+        [ -f "$file" ] && exit 0
+    done
+    [ "$dir" = "/" ] && exit 1
+    dir="${dir%/*}"
+    [ -n "$dir" ] || dir="/"
+done
+'''

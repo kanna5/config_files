@@ -19,8 +19,12 @@
     "reasoning_effort": "high",
     "service_tier": "priority"
   },
+  "gpt-6.1-terra-codex": {
+    "reasoning_effort": "high",
+    "service_tier": "priority"
+  },
   "gpt-6-luna-codex": {
-    "reasoning_effort": "max",
+    "reasoning_effort": "xhigh",
     "service_tier": "priority"
   },
   "gemini/gemini-3.8-flash": {
@@ -36,10 +40,10 @@
     "reasoning_effort": "medium"
   },
   "glm-5p3-flash": {
-    "reasoning_effort": "max"
+    "reasoning_effort": "xhigh"
   },
-  "deepseek-v4p1-flash": {
-    "reasoning_effort": "max"
+  "deepseek-v4p1-flash-1017": {
+    "reasoning_effort": "xhigh"
   },
   "inkling": {
     "reasoning_effort": "medium"

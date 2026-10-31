@@ -1,0 +1,16 @@
+# style name or JSON path (default "auto")
+# replace ~ with actual $HOME. expansion not supported yet.
+# watch: https://github.com/charmbracelet/glow/issues/713
+style: "~/.config/glow/gruvbox-dark-hard.json"
+# mouse wheel support (TUI-mode only)
+mouse: false
+# use pager to display markdown
+pager: true
+# at which column should we word wrap?
+# width: 120
+# show all files, including hidden and ignored.
+all: false
+# show line numbers (TUI-mode only)
+showLineNumbers: false
+# preserve newlines in the output
+preserveNewLines: false
