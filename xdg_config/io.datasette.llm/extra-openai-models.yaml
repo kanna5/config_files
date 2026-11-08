@@ -85,8 +85,8 @@
   supports_tools: true
   vision: true
 
-- model_id: kimi-k3
-  model_name: accounts/fireworks/models/kimi-k3
+- model_id: kimi-k3p1-pro
+  model_name: accounts/fireworks/models/kimi-k3p1-pro
   api_base: https://api.fireworks.ai/inference/v1
   api_key_name: fireworks
   responses: true

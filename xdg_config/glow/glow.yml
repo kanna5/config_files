@@ -5,7 +5,7 @@ style: "~/.config/glow/gruvbox-dark-hard.json"
 # mouse wheel support (TUI-mode only)
 mouse: false
 # use pager to display markdown
-pager: true
+pager: less -iRFX
 # at which column should we word wrap?
 # width: 120
 # show all files, including hidden and ignored.

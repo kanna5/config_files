@@ -1,0 +1,50 @@
+model = "gpt-6-astra"
+model_reasoning_effort = "max"
+hide_agent_reasoning = false
+model_reasoning_summary = "detailed"
+service_tier = "fast"
+
+sandbox_mode = "read-only"
+approval_policy = "on-request"
+approvals_reviewer = "user"
+check_for_update_on_startup = false
+
+[tui]
+theme = "gruvbox-dark"
+mouse_scroll_speed = 2
+status_line = [
+    "model-with-reasoning",
+    "current-dir",
+    "context-used",
+    "five-hour-limit",
+    "weekly-limit",
+    "used-tokens",
+    "total-input-tokens",
+    "total-output-tokens",
+    "thread-title",
+]
+status_line_use_colors = true
+vim_mode_default = true
+
+screen_reader_detection_done = true
+
+[tui.effects]
+starfield = false
+welcome = false
+shimmer = false
+
+[tui.keymap.composer]
+queue = "ctrl-q"
+
+[tui.keymap.pager]
+# Page-Up and Page-Down scroll half a page instead of a whole page.
+page_up = ["shift-space", "ctrl-b"]
+page_down = ["space", "ctrl-f"]
+half_page_up = ["page-up", "ctrl-u"]
+half_page_down = ["page-down", "ctrl-d"]
+
+[analytics]
+enabled = false
+
+[mcp_servers.openaiDeveloperDocs]
+url = "https://developers.openai.com/mcp"

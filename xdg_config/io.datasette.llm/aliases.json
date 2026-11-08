@@ -10,7 +10,7 @@
   "luna": "gpt-6-luna-codex",
   "gemini": "gemini/gemini-3.8-flash",
   "muse": "muse-spark-open",
-  "k3": "kimi-k3",
+  "k3": "kimi-k3p1-pro",
   "glm": "glm-5p3",
   "glm-flash": "glm-5p3-flash",
   "ds": "deepseek-v4p1-flash-1017"
